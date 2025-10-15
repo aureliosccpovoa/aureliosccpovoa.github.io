@@ -6,6 +6,7 @@
     font-family: Arial, Helvetica, sans-serif;    
     /* height: 100%; */
 }
+
 /*
 body {
     background-image: linear-gradient(to right, #011C40, #144C59);
@@ -19,6 +20,21 @@ main {
     margin: auto;
 }
 
+*/
+div#social{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+}
+/*
 h1 {
     text-align: center;
     color: #011126;
@@ -30,6 +46,5 @@ h2 {
 
 p {
     text-align: justify;
-
 }
 */
