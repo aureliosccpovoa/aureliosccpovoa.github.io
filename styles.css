@@ -50,6 +50,7 @@ h1 {
 h2 {
     font-size: 1.2em;
     color: var(--cor5);
+    text-shadow: 2px 2px 0px var(--cor1);
 }
 
 h3 {
