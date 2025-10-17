@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*@import url('endereço da fonte')*/
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap');
 
 :root {
     --cor1: #00040D;
@@ -8,7 +8,8 @@
     --cor4: #144C59;
     --cor5: #63A693;
 
-    --fonte-padrao: Arial, Helvetica, sans-serif;
+    --fonte-padrao: 'Source Code Pro', monospace;
+    --fonte-destaque: 'Source Code Pro', monospace;
 }
 
 * {
@@ -21,9 +22,7 @@
 body {
     background-color: var(--cor5);
     color: var(--cor1);
-    max-width: 1000px; 
-    min-width: 200px;
-    margin: auto;
+    margin: 0;
 }
 
 header {
@@ -34,6 +33,37 @@ header {
     border-bottom: 2px solid var(--cor1);
     border-color: var(--cor1);
     border-radius: 0px 0px 20px 20px;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 10px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: var(--cor1);
+    text-shadow: 2px 2px 0px var(--cor5);
+}
+
+h2 {
+    font-size: 1.2em;
+    color: var(--cor5);
+}
+
+h3 {
+    font-size: 1.5em;
+    color: var(--cor2);
+    border-bottom: 1px dashed var(--cor4);
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: justify;
+    margin: 15px 0px;
+    text-indent: 0;
 }
 
 nav#social {
@@ -56,18 +86,23 @@ nav#social img {
 section.boxes {
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
+    gap: 20px;
+
+    padding: 20px 0;
 }
 
 article.tools {
-    flex: auto;
-    border-bottom: 1px solid var(--cor4);
-    padding: 20px;
-    max-width: 16%;
-}
+    flex: 1 1 300px;
 
-p {
-    text-align: justify;
-    margin: 15px 0px;
+    background-color: var(--cor5);
+    border: 1px solid var(--cor4);
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    
+    border-bottom: none;
+    padding: 20px;
+    margin-bottom: 0;
 }
 
 footer {
