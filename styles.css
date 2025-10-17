@@ -9,7 +9,6 @@
     --cor5: #63A693;
 
     --fonte-padrao: 'Source Code Pro', monospace;
-    --fonte-destaque: 'Source Code Pro', monospace;
 }
 
 * {
@@ -17,6 +16,8 @@
 
     text-decoration: none;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.350);
+
+    box-sizing: border-box;
 }
 
 body {
@@ -28,34 +29,37 @@ body {
 header {
     background-color: var(--cor4);
     color: var(--cor1);
-    padding: 20px 30px;
-    margin-bottom: 5px;
+    padding: 30px 20px;
+    margin-bottom: 20px;
     border-bottom: 2px solid var(--cor1);
     border-color: var(--cor1);
     border-radius: 0px 0px 20px 20px;
 }
 
 main {
+    min-width: 300px;
     max-width: 1200px;
-    margin: 20px auto;
-    padding: 0 10px;
+    margin: 0 auto;
+    padding: 20px 10px;
 }
 
-h1 {
-    font-size: 2.5em;
+header h1 {
+    font-size: 2.8em;
     color: var(--cor1);
     text-shadow: 2px 2px 0px var(--cor5);
+    margin: 0 0 5px 0;
 }
 
-h2 {
+header h2 {
     font-size: 1.2em;
+    font-weight: 400;
     color: var(--cor5);
     text-shadow: 2px 2px 0px var(--cor1);
 }
 
 h3 {
     font-size: 1.5em;
-    color: var(--cor2);
+    color: var(--cor5);
     border-bottom: 1px dashed var(--cor4);
     padding-bottom: 5px;
     margin-bottom: 10px;
@@ -96,14 +100,29 @@ section.boxes {
 article.tools {
     flex: 1 1 300px;
 
-    background-color: var(--cor5);
+    background-color: var(--cor2);
+    color: var(--cor5);
     border: 1px solid var(--cor4);
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
     
     border-bottom: none;
-    padding: 20px;
-    margin-bottom: 0;
+    padding: 25px;
+}
+
+article.tools h3 {
+    font-size: 1.6em;
+    color: var(--cor5);
+    border-bottom: 1px dashed var(--cor4);
+    padding-bottom: 5px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+article.tools:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.6);
 }
 
 footer {
