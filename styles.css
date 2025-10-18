@@ -3,7 +3,7 @@
 
 :root {
     --cor1: #062444;
-    --cor2: #304A5D;
+    --cor2: #205880;
     --cor3: #7CB4A5;
     --cor4: #FAF2E4;
     --cor5: #E2E9E6;
@@ -29,8 +29,8 @@ body {
 header {
     background-color: var(--cor2);
     color: var(--cor1);
-    padding: 30px 20px;
-    margin-bottom: 20px;
+    padding: 30px 40px;
+    margin-bottom: 10px;
     border-bottom: 2px solid var(--cor1);
     border-color: var(--cor1);
     border-radius: 0px 0px 10px 10px;
