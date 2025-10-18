@@ -107,9 +107,9 @@ article.tools {
 
     background-color: var(--cor1);
     color: var(--cor5);
-    border: 1px solid var(--cor4);
+    /* border: 1px solid var(--cor5);*/
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);
     transition: transform 0.3s ease;
     
     border-bottom: none;
