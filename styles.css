@@ -57,11 +57,12 @@ h3 {
 }
 
 main {
-    display: grid;
-    grid-template-columns: auto 90vw auto;
-    gap: 20px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 20px 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 main h1 {
@@ -80,16 +81,19 @@ section.perfil {
     color: var(--cor4);
     background-color: var(--cor2);
     padding: 20px;
-    
     border-radius: 10px;
-    grid-column: 1;
     text-shadow: 2px 2px 0px var(--cor1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 section.perfil img {
-    width: 300px;
+    width: 200px;
+    height: 200px;
     aspect-ratio: 1/1;
-    object-fit: contain;
+    object-fit: cover;
     overflow: hidden;
     border-radius: 50%;
     border: 5px solid var(--cor4);
@@ -100,10 +104,7 @@ section.perfil img {
 
 section.container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content:center;
-    gap: 20px;
-    max-width: 78%;
+    gap: 60px;
 }
 
 article.item {
@@ -164,29 +165,32 @@ nav#social a:hover i {
     color: var(--cor1);
 }
 
-/* Para dispositvos móveis */
-@media (max-width: 650px) {
+/* Para telas maiores (ex.: tablets e desktops */
+@media (min-width: 768px) {
     header {
-        padding: 20px 10px;
-    }
-
-    header h1 {
-        font-size: 2.2em;
-    }
-
-    header h2 {
-        font-size: 1em;
-    }
-
-    section.item {
-        gap: 15px;
+        padding: 30px 120px;
     }
 
     main {
-        padding: 0 5px;
+        flex-direction: row;
+        align-items: flex-start;
     }
 
-    article.item {
-        padding: 20px;
+    section.perfil {
+        flex: 1;
+        position: sticky;
+        top: 20px;
+    }
+
+    section.container {
+        flex: 2;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Para telas ainda maiores */
+@media (min-width= 1200px){
+    section.container {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
