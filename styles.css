@@ -2,11 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap');
 
 :root {
-    --cor1: #00040D;
-    --cor2: #011C40;
-    --cor3: #011126;
-    --cor4: #144C59;
-    --cor5: #63A693;
+    --cor1: #062444;
+    --cor2: #304A5D;
+    --cor3: #7CB4A5;
+    --cor4: #FAF2E4;
+    --cor5: #E2E9E6;
 
     --fonte-padrao: 'Source Code Pro', monospace;
 }
@@ -27,13 +27,13 @@ body {
 }
 
 header {
-    background-color: var(--cor4);
+    background-color: var(--cor2);
     color: var(--cor1);
     padding: 30px 20px;
     margin-bottom: 20px;
     border-bottom: 2px solid var(--cor1);
     border-color: var(--cor1);
-    border-radius: 0px 0px 20px 20px;
+    border-radius: 0px 0px 10px 10px;
 }
 
 main {
@@ -45,8 +45,8 @@ main {
 
 header h1 {
     font-size: 2.8em;
-    color: var(--cor1);
-    text-shadow: 2px 2px 0px var(--cor5);
+    color: var(--cor4);
+    text-shadow: 2px 2px 0px var(--cor1);
     margin: 0 0 5px 0;
 }
 
@@ -82,17 +82,22 @@ nav#social {
     gap: 15px;
 }
 
-nav#social img {
+nav#social a img {
     width: 32px;
     height: 32px;
     padding: 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+nav#social a:hover img {
+    transform: scale(1.1)
 }
 
 section.boxes {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
 
     padding: 20px 0;
 }
@@ -100,10 +105,10 @@ section.boxes {
 article.tools {
     flex: 1 1 300px;
 
-    background-color: var(--cor2);
+    background-color: var(--cor1);
     color: var(--cor5);
     border: 1px solid var(--cor4);
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
     transition: transform 0.3s ease;
     
@@ -129,4 +134,30 @@ footer {
     text-align: center;
     padding-top: 20px;
     border-top: 2px solid var(--cor1);
+}
+
+@media (max-width: 650px) {
+    header {
+        padding: 20px 10px;
+    }
+
+    header h1 {
+        font-size: 2.2em;
+    }
+
+    header h2 {
+        font-size: 1em;
+    }
+
+    section.boxes {
+        gap: 15px;
+    }
+
+    main {
+        padding: 0 5px;
+    }
+
+    article.tools {
+        padding: 20px;
+    }
 }
