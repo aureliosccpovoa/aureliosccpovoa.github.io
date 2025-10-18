@@ -104,7 +104,8 @@ section.perfil img {
 
 section.container {
     display: grid;
-    gap: 60px;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 article.item {
@@ -115,6 +116,7 @@ article.item {
     transition: transform 0.3s ease;   
     border-bottom: none;
     padding: 25px;
+    min-width: 250px;
 }
 
 article.item h3 {
@@ -184,13 +186,13 @@ nav#social a:hover i {
 
     section.container {
         flex: 2;
-        grid-template-columns: 1fr 1fr;
     }
 }
 
 /* Para telas ainda maiores */
-@media (min-width= 1200px){
+@media (min-width: 1200px){
     section.container {
-        grid-template-columns: repeat(3, 1fr);
+        display: grid;
+        gap: 20px;
     }
 }
