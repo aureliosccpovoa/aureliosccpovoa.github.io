@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Old Toolbox</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="images/favicon-logo-nobackground.png" type="image/png">
+    <link rel="icon" href="images/toolbox-solid-full.svg" type="image/svg+xml">
     <script src="https://kit.fontawesome.com/52ba8f8e7e.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -16,8 +16,11 @@
     
     <main>
         <section class="perfil">
-            <img src="images/perfil.jpeg" alt="logo website no background" class="foto-perfil">
-            
+            <picture>
+                <source srcset="images/perfil.avif" type="image/avif">
+                <source srcset="images/perfil.webp" type="image/webp">
+                <img src="images/perfil.jpeg" alt="logo website no background" class="foto-perfil">
+            </picture>
             <h1>Aurélio Póvoa</h1>
     
             <!-- ESTILIZAR POSTERIORMENTE -->
