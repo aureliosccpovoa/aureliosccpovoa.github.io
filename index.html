@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de projetos open source  de Aurélio S. C. C. Póvoa">
     <title>Old Toolbox</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="images/toolbox-solid-full.svg" type="image/svg+xml">
@@ -12,6 +13,14 @@
     <header> 
         <h1>Old Toolbox</h1>
         <h2>Ferramentas gratuitas e de código aberto para uso cotidiano</h2>
+        <!-- Botão de alternância de cores -->
+        <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox">
+                <div class="slider round"></div>
+            </label>
+        </div>
+        <!-- Botão de alternância de cores -->
     </header>
     
     <main>
@@ -22,9 +31,7 @@
                 <img src="images/perfil.jpeg" alt="logo website no background" class="foto-perfil">
             </picture>
             <h1>Aurélio Póvoa</h1>
-    
-            <!-- ESTILIZAR POSTERIORMENTE -->
-            <ul>
+            <ul class="qualifications">
                 <li><i class="fa-solid fa-graduation-cap"></i> Acadêmico do curso de Segurança Cibernética, com foco em segurança da informação e análise de vulnerabilidades em software e sistemas web. 
                 <li><i class="fa-solid fa-microchip"></i> Apaixonado por compreender o funcionamento real de computadores e seus componentes, principalmente no que concerne à parte de segurança, com foco em programação voltada à cibersegurança e áreas como inteligência artificial e blockchain.
                 <li><i class="fa-solid fa-magnifying-glass-plus"></i> Busco oportunidade para desempenhar funções estratégicas, desde o planejamento até a execução, permitindo uma visão ampliada do processo, em constante aprendizado e aprimoramento.
@@ -119,5 +126,8 @@
             </a>
         </nav>
     </footer>   
+
+<script src="script.js"></script>
+
 </body>
 </html>
