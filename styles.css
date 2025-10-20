@@ -49,7 +49,7 @@ body.dark-mode article.item:hover {
 
 body.dark-mode .slider::before {
     background-color: var(--cor4); /* círculo escuro */
-    color: var(--cor1);            /* ícone claro */
+    background-image: var(--icon-toolbox-light);
 }
 
 header {
@@ -126,7 +126,6 @@ h3 {
     border-radius: 50%; /* fundo circular */
 
     background-color: var(--cor5); /* círculo claro */
-    color: var(--cor1); /* ícone escuro */
 
     /* Define o ícone do site como imagem de fundo do seletor de modo */
     background-image: var(--icon-toolbox-dark);
