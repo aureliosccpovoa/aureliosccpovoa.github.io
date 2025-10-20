@@ -132,9 +132,6 @@ h3 {
     background-size: 65%;
     background-repeat: no-repeat;
     background-position: center;
-
-    /* Cor do ícone alterada para fill="currentColor" no código XML do arquivo SVG */
-    color: var(--cor1);
 }
 
 input:checked + .slider {
