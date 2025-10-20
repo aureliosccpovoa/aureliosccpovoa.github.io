@@ -46,9 +46,9 @@ body.dark-mode article.item:hover {
     box-shadow: 0 6px 10px rgba(255, 255, 255, 0.15);
 }
 
-body.dark-mode .slider:before {
-    background-color: var(--cor4); /* Cor do círculo no modo escuro */
-    color: var(--cor5);            /* Cor do ícone no modo escuro */
+body.dark-mode .slider::before {
+    background-color: var(--cor1); /* círculo escuro */
+    color: var(--cor5);            /* ícone claro */
 }
 
 header {
@@ -114,17 +114,19 @@ h3 {
     align-items: center;
 }
 
-.slider:before {
+.slider::before {
     content: "";
     height: 22px;
     width: 22px;
     position: absolute;
     left: 4px;
+    top: 4px;
     transition: .3s;
     border-radius: 50%; /* fundo circular */
 
-    background-color: var(--cor5); /* cor do círculo */
-    
+    background-color: var(--cor5); /* círculo claro */
+    color: var(--cor1); /* ícone escuro */
+
     /* Define o ícone do site como imagem de fundo do seletor de modo */
     background-image: var(--icon-toolbox);
     background-size: 65%;
