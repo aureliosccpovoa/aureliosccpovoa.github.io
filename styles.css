@@ -47,7 +47,7 @@ body.dark-mode article.item:hover {
 }
 
 body.dark-mode .slider:before {
-    background-color: var(--cor1); /* Cor do círculo no modo escuro */
+    background-color: var(--cor4); /* Cor do círculo no modo escuro */
     color: var(--cor5);            /* Cor do ícone no modo escuro */
 }
 
@@ -118,7 +118,7 @@ h3 {
     content: "";
     height: 22px;
     width: 22px;
-    position: relative;
+    position: absolute;
     left: 4px;
     transition: .3s;
     border-radius: 50%; /* fundo circular */
@@ -140,7 +140,7 @@ input:checked + .slider {
 }
 
 input:checked + .slider::before {
-    transform: translateX(20px);
+    left: 24px; /* 50px de largura - 22px do círculo - 4px de margem direita*/
 }
 
 main {
