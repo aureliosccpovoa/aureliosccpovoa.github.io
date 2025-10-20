@@ -10,7 +10,8 @@
 
     --fonte-padrao: 'Source Code Pro', monospace;
 
-    --icon-toolbox: url('images/switch-icon.svg');
+    --icon-toolbox-light: url('images/switch-icon-light.svg');
+    --icon-toolbox-dark: url('images/switch-icon-dark.svg');
 }
 
 * {
@@ -128,7 +129,7 @@ h3 {
     color: var(--cor1); /* ícone escuro */
 
     /* Define o ícone do site como imagem de fundo do seletor de modo */
-    background-image: var(--icon-toolbox);
+    background-image: var(--icon-toolbox-dark);
     background-size: 65%;
     background-repeat: no-repeat;
     background-position: center;
