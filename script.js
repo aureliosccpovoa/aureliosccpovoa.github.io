@@ -1,12 +1,12 @@
 // Seleção do interruptor (checkbox) do tema
-const themeSwitch = document.querySelector('#checkbox')
+const themeSwitch = document.querySelector('#checkbox');
 
 // Mudar o tema
 function switchTheme(e) {
     if (e.target.checked) {
-        document.body.classList.add('dark-mode')
+        document.body.classList.add('dark-mode');
     } else {
-        document.body.classList.remove('dark-mode')
+        document.body.classList.remove('dark-mode');
     }
 }
 
@@ -79,15 +79,20 @@ const translation = {
 const translatePage = (language) => {
     document.querySelectorAll('[data-lang-key').forEach(element => {
         const key = element.getAttribute('data-lang-key');
-        if (translations[language] && translations[language][key]) {
-            element.innerText = translations[language][key];
+        if (translation[language] && translation[language][key]) {
+            // Se o elemento contiver um ícone, traduzir apenas o texto
+            if (element.children.length > 0 && element.children[0].tagName === 'I') {
+                element.childNodes[1].nodeValue = translation[language][key];
+            } else {
+                element.innerText = translation[language][key];
+            }
         }
     });
     document.documentElement.lang = language;
 };
 
 // Botões
-const langButtons = document.querySelectorall('.lang-btn');
+const langButtons = document.querySelectorAll('.lang-btn');
 
 langButtons.forEach(button => {
     button.addEventListener('click', () => {
@@ -100,4 +105,11 @@ langButtons.forEach(button => {
         const selectedLang = button.getAttribute('data-lang');
         translatePage(selectedLang); 
     });
+});
+
+// Tradução automática para o idioma padrão (Português) no carregamento da página
+document.addEventListener('DOMContentLoaded', () => {
+    translatePage('pt-br');
+    document.querySelector('.lang-btn[data-lang="pt-br"]').classList.add('active');
+    document.querySelector('.lang-btn[data-lang="en"]').classList.remove('active');
 });
