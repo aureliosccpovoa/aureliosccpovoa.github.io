@@ -267,6 +267,39 @@ nav#social a:hover i {
     color: var(--cor1);
 }
 
+/* Estilos do seletor de idiomas */
+.lang-switch-wrapper {
+    position: absolute;
+    top: 20px;
+    right: 110px; /* posiciona ao lado do seletor de modo de cores */
+    display: flex;
+    align-items: center;
+    background-color: var(--cor1);
+    padding: 4px;
+    border-radius: 20px;
+}
+
+.lang-btn {
+    background-color: transparent;
+    border: none;
+    color: var(--cor5);
+    cursor: pointer;
+    font-weight: bold;
+    padding: 2px 8px;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.lang-separator {
+    color: var(--cor5);
+    margin: 0 2px;
+}
+
+.lang-btn.active {
+    background-color: var(--cor3);
+    color: var(--cor1);
+}
+
 /* Para telas maiores (ex.: tablets e desktops */
 @media (min-width: 768px) {
     header {
