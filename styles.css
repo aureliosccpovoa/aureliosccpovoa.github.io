@@ -47,7 +47,8 @@ body.dark-mode article.item:hover {
 }
 
 body.dark-mode .slider:before {
-    background-color: var(--cor5);
+    background-color: var(--cor1); /* Cor do círculo no modo escuro */
+    color: var(--cor5);            /* Cor do ícone no modo escuro */
 }
 
 header {
@@ -91,9 +92,10 @@ h3 {
 
 .theme-switch {
     display: inline-block;
-    height: 26px;
+    height: 30px;
     position: relative;
     width: 50px;
+    padding: 2px;
 }
 
 .theme-switch input {
@@ -101,33 +103,36 @@ h3 {
 }
 
 .slider {
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: var(--cor1);
-    cursor: pointer;
     position: absolute;
+    cursor: pointer;
+    top: 0; bottom: 0; left: 0; right: 0;
+    background-color: var(--cor1);
     transition: .3s;
+    border-radius: 34px;
 
     display: flex;
     align-items: center;
-    padding: 4px;
 }
 
 .slider:before {
     content: "";
-    height: 18px;
-    width: 18px;
+    height: 22px;
+    width: 22px;
     position: relative;
+    left: 4px;
     transition: .3s;
+    border-radius: 50%; /* fundo circular */
 
-    background-color: var(--cor5);
+    background-color: var(--cor5); /* cor do círculo */
     
-    mask-image: var(--icon-toolbox);
-    mask-size: 60%;
-    mask-repeat: no-repeat;
-    mask-position: center;
+    /* Define o ícone do site como imagem de fundo do seletor de modo */
+    background-image: var(--icon-toolbox);
+    background-size: 65%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    /* Cor do ícone alterada para fill="currentColor" no código XML do arquivo SVG */
+    color: var(--cor1);
 }
 
 input:checked + .slider {
@@ -135,15 +140,7 @@ input:checked + .slider {
 }
 
 input:checked + .slider::before {
-    transform: translateX(24px);
-}
-
-.slider.round {
-    border-radius: 34px;
-}
-
-.slider.round::before {
-    border-radius: 50%;
+    transform: translateX(20px);
 }
 
 main {
