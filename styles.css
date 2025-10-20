@@ -47,8 +47,8 @@ body.dark-mode article.item:hover {
 }
 
 body.dark-mode .slider::before {
-    background-color: var(--cor1); /* círculo escuro */
-    color: var(--cor5);            /* ícone claro */
+    background-color: var(--cor4); /* círculo escuro */
+    color: var(--cor1);            /* ícone claro */
 }
 
 header {
