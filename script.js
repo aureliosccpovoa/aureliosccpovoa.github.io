@@ -18,10 +18,10 @@ const translation = {
     // Português
     "pt-br": {
         "subtitle": "Ferramentas gratuitas e de código aberto para uso cotidiano",
-        "qual_1": " Acadêmico do curso de Segurança Cibernética, com foco em segurança da informação e análise de vulnerabilidades em software e sistemas web.",
-        "qual_2": " Apaixonado por compreender o funcionamento real de computadores e seus componentes, principalmente no que concerne à parte de segurança, com foco em programação voltada à cibersegurança e áreas como inteligência artificial e blockchain.",
-        "qual_3": " Experiência razoável em diversas áreas da tecnologia, incluindo programação principalmente em C e Python, possuindo também familiaridade com outras linguagens como Java, Assembly e VBA (Visual Basic for Applications), e desenvolvimento web (HTML5, CSS, JavaScript). Por fim, conhecimento intermediário de redes de computadores, ferramentas de diagnóstico de rede e suporte técnico para usuários de PC, Mac e Linux.",
-        "qual_4": " Fluente em Inglês, tendo sido professor terceirizado durante 18 meses.",
+        "qual_1": " Cursando Segurança Cibernética, com foco em segurança da informação e análise de vulnerabilidades em software e sistemas web.",
+        "qual_2": " Apaixonado por descobrir o funcionamento real de computadores e seus componentes, principalmente no que concerne à parte de segurança.",
+        "qual_3": " Experiente em diversas áreas da tecnologia, incluindo programação (principalmente em C e Python, com conhecimento de outras linguagens como Java, Assembly e VBA) e desenvolvimento web (HTML5, CSS, JavaScript), bem como redes de computadores, ferramentas de diagnóstico de rede e suporte técnico para usuários de Linux, Windows e Mac.",
+        "qual_4": " Fluente em Inglês, tendo sido professor terceirizado em empresa multinacional durante 18 meses.",
         "tool_1_title": "Ferramenta 1", 
         "tool_1_desc": "Previsão de lançamento: segundo semestre de 2026.",
         "tool_2_title": "Ferramenta 2",
@@ -46,10 +46,10 @@ const translation = {
     // Inglês
     "en": {
         "subtitle": "Free & Open Source tools for daily use",
-        "qual_1": " Cybersecurity student, focusing on information security and vulnerability analysis in software and web systems.",
-        "qual_2": " Passionate about understanding the real workings of computers and their components, especially regarding security, with a focus on cybersecurity-oriented programming and areas like artificial intelligence and blockchain.",
-        "qual_3": " Reasonable experience in various areas of technology, including programming mainly in C, Python, but also familiar with other languages such as Java, Assembly and VBA (Visual Basic for Applications), and web development (HTML5, CSS, JavaScript). Lastly, intermediate knowledge of computer networks, network diagnostic tools and technical support for PC, Mac and Linux users.",
-        "qual_4": " Fluent in English, having been a contract teacher for 18 months.",
+        "qual_1": " Studying Cybersecurity, focusing on information security and vulnerability analysis in software and web systems.",
+        "qual_2": " Passionate about discovering the real functioning of computers and their components, especially when it comes to security.",
+        "qual_3": "Experient in various areas of technology, including programming (mainly in C and Python, with knowledge of other languages ​​such as Java, Assembly and VBA) and web development (HTML5, CSS, JavaScript), as well as computer networks, network diagnostic tools and technical support for Linux, Windows and Mac users.",
+        "qual_4": " Fluent in English, having been an outsourced teacher in a multinational company for 18 months.",
         "tool_1_title": "Tool 1", 
         "tool_1_desc": "Estimated release date: second half of 2026.",
         "tool_2_title": "Tool 2",
