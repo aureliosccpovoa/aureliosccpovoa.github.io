@@ -1,113 +1,126 @@
 // Seleção do interruptor (checkbox) do tema
-const themeSwitch = document.querySelector('#checkbox');
+const themeSwitch = document.querySelector("#checkbox");
 
 // Mudar o tema
 function switchTheme(e) {
-    if (e.target.checked) {
-        document.body.classList.add('dark-mode');
-    } else {
-        document.body.classList.remove('dark-mode');
-    }
+  if (e.target.checked) {
+    document.body.classList.add("dark-mode");
+  } else {
+    document.body.classList.remove("dark-mode");
+  }
 }
 
 // Chamar a função switchTheme quando o interruptor é acionado
-themeSwitch.addEventListener('change', switchTheme, false);
+themeSwitch.addEventListener("change", switchTheme, false);
 
 // Alteração do idioma
 const translation = {
-    // Português
-    "pt-br": {
-        "subtitle": "Ferramentas gratuitas e de código aberto para uso cotidiano",
-        "qual_1": " Cursando Segurança Cibernética, com foco em segurança da informação e análise de vulnerabilidades em software e sistemas web.",
-        "qual_2": " Apaixonado por descobrir o funcionamento real de computadores e seus componentes, principalmente no que concerne à parte de segurança.",
-        "qual_3": " Experiente em diversas áreas da tecnologia, incluindo programação (principalmente em C e Python, com conhecimento de outras linguagens como Java, Assembly e VBA) e desenvolvimento web (HTML5, CSS, JavaScript), bem como redes de computadores, ferramentas de diagnóstico de rede e suporte técnico para usuários de Linux, Windows e Mac.",
-        "qual_4": " Fluente em Inglês, tendo sido professor terceirizado em empresa multinacional durante 18 meses.",
-        "tool_1_title": "Ferramenta 1", 
-        "tool_1_desc": "Previsão de lançamento: segundo semestre de 2026.",
-        "tool_2_title": "Ferramenta 2",
-        "tool_2_desc": "Previsão de lançamento: segundo semestre de 2026.",
-        "tool_3_title": "Ferramenta 3",
-        "tool_3_desc": "Previsão de lançamento: segundo semestre de 2026.",
-        "tool_4_title": "Ferramenta 4",
-        "tool_4_desc": "Previsão de lançamento: segundo semestre de 2026.",
-        "tool_5_title": "Ferramenta 5",
-        "tool_5_desc": "Previsão de lançamento: segundo semestre de 2026.",
-        "tool_6_title": "Ferramenta 6",
-        "tool_6_desc": "Previsão de lançamento: segundo semestre de 2026.",
-        "tool_7_title": "Ferramenta 7",
-        "tool_7_desc": "Previsão de lançamento: segundo semestre de 2026.",
-        "tool_8_title": "Ferramenta 8",
-        "tool_8_desc": "Previsão de lançamento: segundo semestre de 2026.",
-        "tool_9_title": "Ferramenta 9",
-        "tool_9_desc": "Previsão de lançamento: primeiro semestre de 2027.",
-        "tool_10_title": "Ferramenta 10",
-        "tool_10_desc": "Previsão de lançamento: primeiro semestre de 2027.",
-    },  
-    // Inglês
-    "en": {
-        "subtitle": "Free & Open Source tools for daily use",
-        "qual_1": " Studying Cybersecurity, focusing on information security and vulnerability analysis in software and web systems.",
-        "qual_2": " Passionate about discovering the real functioning of computers and their components, especially when it comes to security.",
-        "qual_3": "Experient in various areas of technology, including programming (mainly in C and Python, with knowledge of other languages ​​such as Java, Assembly and VBA) and web development (HTML5, CSS, JavaScript), as well as computer networks, network diagnostic tools and technical support for Linux, Windows and Mac users.",
-        "qual_4": " Fluent in English, having been an outsourced teacher in a multinational company for 18 months.",
-        "tool_1_title": "Tool 1", 
-        "tool_1_desc": "Estimated release date: second half of 2026.",
-        "tool_2_title": "Tool 2",
-        "tool_2_desc": "Estimated release date: second half of 2026.",
-        "tool_3_title": "Tool 3",
-        "tool_3_desc": "Estimated release date: second half of 2026.",
-        "tool_4_title": "Tool 4",
-        "tool_4_desc": "Estimated release date: second half of 2026.",
-        "tool_5_title": "Tool 5",
-        "tool_5_desc": "Estimated release date: second half of 2026.",
-        "tool_6_title": "Tool 6",
-        "tool_6_desc": "Estimated release date: second half of 2026.",
-        "tool_7_title": "Tool 7",
-        "tool_7_desc": "Estimated release date: second half of 2026.",
-        "tool_8_title": "Tool 8",
-        "tool_8_desc": "Estimated release date: second half of 2026.",
-        "tool_9_title": "Tool 9",
-        "tool_9_desc": "Estimated release date: first half of 2027.",
-        "tool_10_title": "Tool 10",
-        "tool_10_desc": "Estimated release date: first half of 2027.",
-    }
+  // Português
+  "pt-br": {
+    subtitle: "Ferramentas gratuitas e de código aberto para uso cotidiano",
+    qual_1:
+      " Cursando Segurança Cibernética, com foco em segurança da informação e análise de vulnerabilidades em software e sistemas web.",
+    qual_2:
+      " Apaixonado por descobrir o funcionamento real de computadores e seus componentes, principalmente no que concerne à parte de segurança.",
+    qual_3:
+      " Experiente em diversas áreas da tecnologia, incluindo programação (principalmente em C e Python, com conhecimento de outras linguagens como Java, Assembly e VBA) e desenvolvimento web (HTML5, CSS, JavaScript), bem como redes de computadores, ferramentas de diagnóstico de rede e suporte técnico para usuários de Linux, Windows e Mac.",
+    qual_4:
+      " Fluente em Inglês, tendo sido professor terceirizado em empresa multinacional durante 18 meses.",
+    tool_1_title: "Ferramenta 1",
+    tool_1_desc: "Previsão de lançamento: segundo semestre de 2026.",
+    tool_2_title: "Ferramenta 2",
+    tool_2_desc: "Previsão de lançamento: segundo semestre de 2026.",
+    tool_3_title: "Ferramenta 3",
+    tool_3_desc: "Previsão de lançamento: segundo semestre de 2026.",
+    tool_4_title: "Ferramenta 4",
+    tool_4_desc: "Previsão de lançamento: segundo semestre de 2026.",
+    tool_5_title: "Ferramenta 5",
+    tool_5_desc: "Previsão de lançamento: segundo semestre de 2026.",
+    tool_6_title: "Ferramenta 6",
+    tool_6_desc: "Previsão de lançamento: segundo semestre de 2026.",
+    tool_7_title: "Ferramenta 7",
+    tool_7_desc: "Previsão de lançamento: segundo semestre de 2026.",
+    tool_8_title: "Ferramenta 8",
+    tool_8_desc: "Previsão de lançamento: segundo semestre de 2026.",
+    tool_9_title: "Ferramenta 9",
+    tool_9_desc: "Previsão de lançamento: primeiro semestre de 2027.",
+    tool_10_title: "Ferramenta 10",
+    tool_10_desc: "Previsão de lançamento: primeiro semestre de 2027.",
+  },
+  // Inglês
+  en: {
+    subtitle: "Free & Open Source tools for daily use",
+    qual_1:
+      " Studying Cybersecurity, focusing on information security and vulnerability analysis in software and web systems.",
+    qual_2:
+      " Passionate about discovering the real functioning of computers and their components, especially when it comes to security.",
+    qual_3:
+      "Experient in various areas of technology, including programming (mainly in C and Python, with knowledge of other languages ​​such as Java, Assembly and VBA) and web development (HTML5, CSS, JavaScript), as well as computer networks, network diagnostic tools and technical support for Linux, Windows and Mac users.",
+    qual_4:
+      " Fluent in English, having been an outsourced teacher in a multinational company for 18 months.",
+    tool_1_title: "Dork Web",
+    tool_1_desc:
+      "A command-line interface (CLI) tool developed in Python to streamline open-source intelligence (OSINT) operations. The application generates, formats, and executes Google Dorks in a structured manner, preventing typos and saving time during investigations.",
+    tool_2_title: "Tool 2",
+    tool_2_desc: "Estimated release date: second half of 2026.",
+    tool_3_title: "Tool 3",
+    tool_3_desc: "Estimated release date: second half of 2026.",
+    tool_4_title: "Tool 4",
+    tool_4_desc: "Estimated release date: second half of 2026.",
+    tool_5_title: "Tool 5",
+    tool_5_desc: "Estimated release date: second half of 2026.",
+    tool_6_title: "Tool 6",
+    tool_6_desc: "Estimated release date: second half of 2026.",
+    tool_7_title: "Tool 7",
+    tool_7_desc: "Estimated release date: second half of 2026.",
+    tool_8_title: "Tool 8",
+    tool_8_desc: "Estimated release date: second half of 2026.",
+    tool_9_title: "Tool 9",
+    tool_9_desc: "Estimated release date: first half of 2027.",
+    tool_10_title: "Tool 10",
+    tool_10_desc: "Estimated release date: first half of 2027.",
+  },
 };
 
 // Tradução da página
 const translatePage = (language) => {
-    document.querySelectorAll('[data-lang-key').forEach(element => {
-        const key = element.getAttribute('data-lang-key');
-        if (translation[language] && translation[language][key]) {
-            // Se o elemento contiver um ícone, traduzir apenas o texto
-            if (element.children.length > 0 && element.children[0].tagName === 'I') {
-                element.childNodes[1].nodeValue = translation[language][key];
-            } else {
-                element.innerText = translation[language][key];
-            }
-        }
-    });
-    document.documentElement.lang = language;
+  document.querySelectorAll("[data-lang-key").forEach((element) => {
+    const key = element.getAttribute("data-lang-key");
+    if (translation[language] && translation[language][key]) {
+      // Se o elemento contiver um ícone, traduzir apenas o texto
+      if (element.children.length > 0 && element.children[0].tagName === "I") {
+        element.childNodes[1].nodeValue = translation[language][key];
+      } else {
+        element.innerText = translation[language][key];
+      }
+    }
+  });
+  document.documentElement.lang = language;
 };
 
 // Botões
-const langButtons = document.querySelectorAll('.lang-btn');
+const langButtons = document.querySelectorAll(".lang-btn");
 
-langButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        // Remove a classe 'active' de todos os botões
-        langButtons.forEach(btn => btn.classList.remove('active'));
-        // Adiciona a classe 'active' ao botão clicado
-        button.classList.add('active');
+langButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    // Remove a classe 'active' de todos os botões
+    langButtons.forEach((btn) => btn.classList.remove("active"));
+    // Adiciona a classe 'active' ao botão clicado
+    button.classList.add("active");
 
-        // Obtém a informação do idioma através do botão e traduz a página
-        const selectedLang = button.getAttribute('data-lang');
-        translatePage(selectedLang); 
-    });
+    // Obtém a informação do idioma através do botão e traduz a página
+    const selectedLang = button.getAttribute("data-lang");
+    translatePage(selectedLang);
+  });
 });
 
 // Tradução automática para o idioma padrão (Português) no carregamento da página
-document.addEventListener('DOMContentLoaded', () => {
-    translatePage('pt-br');
-    document.querySelector('.lang-btn[data-lang="pt-br"]').classList.add('active');
-    document.querySelector('.lang-btn[data-lang="en"]').classList.remove('active');
+document.addEventListener("DOMContentLoaded", () => {
+  translatePage("pt-br");
+  document
+    .querySelector('.lang-btn[data-lang="pt-br"]')
+    .classList.add("active");
+  document
+    .querySelector('.lang-btn[data-lang="en"]')
+    .classList.remove("active");
 });
