@@ -26,8 +26,8 @@ const translation = {
       " Experiente em diversas áreas da tecnologia, incluindo programação (principalmente em C e Python, com conhecimento de outras linguagens como Java, Assembly e VBA) e desenvolvimento web (HTML5, CSS, JavaScript), bem como redes de computadores, ferramentas de diagnóstico de rede e suporte técnico para usuários de Linux, Windows e Mac.",
     qual_4:
       " Fluente em Inglês, tendo sido professor terceirizado em empresa multinacional durante 18 meses.",
-    tool_1_title: "Ferramenta 1",
-    tool_1_desc: "Previsão de lançamento: segundo semestre de 2026.",
+    tool_1_title: ">_ Dork Web",
+    tool_1_desc: "Ferramenta de linha de comando (CLI) em Python capaz de gerar, organizar e executar pesquisas avançadas no Google (Dorks)",
     tool_2_title: "Ferramenta 2",
     tool_2_desc: "Previsão de lançamento: segundo semestre de 2026.",
     tool_3_title: "Ferramenta 3",
@@ -58,9 +58,9 @@ const translation = {
       "Experient in various areas of technology, including programming (mainly in C and Python, with knowledge of other languages ​​such as Java, Assembly and VBA) and web development (HTML5, CSS, JavaScript), as well as computer networks, network diagnostic tools and technical support for Linux, Windows and Mac users.",
     qual_4:
       " Fluent in English, having been an outsourced teacher in a multinational company for 18 months.",
-    tool_1_title: "Dork Web",
+    tool_1_title: ">_ Dork Web",
     tool_1_desc:
-      "A command-line interface (CLI) tool developed in Python to streamline open-source intelligence (OSINT) operations. The application generates, formats, and executes Google Dorks in a structured manner, preventing typos and saving time during investigations.",
+      "Python command-line interface (CLI) tool capable of generating, organizing, and executing advanced Google searches (Dorks).",
     tool_2_title: "Tool 2",
     tool_2_desc: "Estimated release date: second half of 2026.",
     tool_3_title: "Tool 3",

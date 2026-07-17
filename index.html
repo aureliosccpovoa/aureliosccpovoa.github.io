@@ -10,10 +10,6 @@
     <title>Old Toolbox</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
-    <script
-      src="https://kit.fontawesome.com/52ba8f8e7e.js"
-      crossorigin="anonymous"
-    ></script>
   </head>
   <body>
     <header>
@@ -24,10 +20,7 @@
 
       <!-- Botão de alternância de modo -->
       <div class="theme-switch-wrapper">
-        <label class="theme-switch" for="checkbox">
-          <input type="checkbox" id="checkbox" />
-          <div class="slider round"></div>
-        </label>
+        <button id="theme-switch-btn">[ Mudar Tema ]</button>
       </div>
       <!-- Botão de alternância de modo -->
 
@@ -42,47 +35,29 @@
 
     <main>
       <section class="perfil">
-        <picture>
-          <source srcset="images/perfil.avif" type="image/avif" />
-          <source srcset="images/perfil.webp" type="image/webp" />
-          <img
-            src="images/perfil.jpeg"
-            alt="logo website no background"
-            class="foto-perfil"
-          />
-        </picture>
         <h1>Aurélio Póvoa</h1>
-        <ul class="qualifications">
-          <li data-lang-key="qual_1">
-            <i class="fa-solid fa-graduation-cap"></i> Cursando Segurança
-            Cibernética, com foco em segurança da informação e análise de
-            vulnerabilidades em software e sistemas web.
-          </li>
-          <li data-lang-key="qual_2">
-            <i class="fa-solid fa-microchip"></i> Apaixonado por descobrir o
-            funcionamento real de computadores e seus componentes,
-            principalmente no que concerne à parte de segurança.
-          </li>
-          <li data-lang-key="qual_3">
-            <i class="fa-solid fa-code"></i> Experiente em diversas áreas da
-            tecnologia, incluindo programação (principalmente em C e Python, com
-            conhecimento de outras linguagens como Java, Assembly e VBA) e
-            desenvolvimento web (HTML5, CSS, JavaScript), bem como redes de
-            computadores, ferramentas de diagnóstico de rede e suporte técnico
-            para usuários de Linux, Windows e Mac.
-          </li>
-          <li data-lang-key="qual_4">
-            <i class="fa-solid fa-language"></i> Fluente em Inglês, tendo sido
-            professor terceirizado em empresa multinacional durante 18 meses.
-          </li>
-        </ul>
+        <p class="qualifications">
+          Cursando Segurança Cibernética, com foco em segurança da informação e
+          análise de vulnerabilidades em software e sistemas web, sou apaixonado
+          por descobrir o funcionamento real de computadores e seus componentes,
+          principalmente no que concerne à parte de segurança.
+        </p>
+        <p class="qualifications">
+          Experiente em diversas áreas da tecnologia, incluindo programação
+          (principalmente em C e Python, com conhecimento de outras linguagens
+          como Java, Assembly e VBA) e desenvolvimento web (HTML5, CSS,
+          JavaScript), bem como redes de computadores, ferramentas de
+          diagnóstico de rede e suporte técnico para usuários de Linux, Windows
+          e Mac. Fluente em Inglês, tendo sido professor terceirizado em empresa
+          multinacional durante 18 meses.
+        </p>
       </section>
 
       <section class="container">
         <article class="item">
-          <h3 data-lang-key="tool_1_title">Ferramenta 1</h3>
+          <h3 data-lang-key="tool_1_title">>_ Dork Web</h3>
           <p data-lang-key="tool_1_desc">
-            Previsão de lançamento: segundo semestre de 2026.
+            Ferramenta de linha de comando (CLI) em Python capaz de gerar, organizar e executar pesquisas avançadas no Google (Dorks).
           </p>
         </article>
 
@@ -157,46 +132,32 @@
           href="https://github.com/aureliosccpovoa/"
           target="_blank"
           rel="external"
-        >
-          <abbr title="GitHub">
-            <i class="fa-brands fa-square-github"></i>
-          </abbr>
+          >[ GitHub ] |
         </a>
 
         <a
           href="https://www.linkedin.com/in/aureliosccpovoa/"
           target="_blank"
           rel="external"
-        >
-          <abbr title="LinkedIn">
-            <i class="fa-brands fa-square-linkedin"></i>
-          </abbr>
+          >[ LinkedIn ] |
         </a>
 
         <a
           href="https://www.instagram.com/aureliosccpovoa/"
           target="_blank"
           rel="external"
-        >
-          <abbr title="Instagram">
-            <i class="fa-brands fa-square-instagram"></i>
-          </abbr>
+          >[ Instagram ] |
         </a>
 
-        <a href="https://x.com/aureliosccpovoa/" target="_blank" rel="external">
-          <abbr title="X">
-            <i class="fa-brands fa-square-x-twitter"></i>
-          </abbr>
+        <a href="https://x.com/aureliosccpovoa/" target="_blank" rel="external"
+          >[ X ] |
         </a>
 
         <a
           href="https://www.youtube.com/@aureliosccpovoa/"
           target="_blank"
           rel="external"
-        >
-          <abbr title="YouTube">
-            <i class="fa-brands fa-square-youtube"></i>
-          </abbr>
+          >[ YouTube ]
         </a>
       </nav>
     </footer>
