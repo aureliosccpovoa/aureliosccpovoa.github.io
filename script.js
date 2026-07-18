@@ -18,16 +18,13 @@ const translation = {
   // Português
   "pt-br": {
     subtitle: "Ferramentas gratuitas e de código aberto para uso cotidiano",
-    qual_1:
-      " Cursando Segurança Cibernética, com foco em segurança da informação e análise de vulnerabilidades em software e sistemas web.",
-    qual_2:
-      " Apaixonado por descobrir o funcionamento real de computadores e seus componentes, principalmente no que concerne à parte de segurança.",
-    qual_3:
-      " Experiente em diversas áreas da tecnologia, incluindo programação (principalmente em C e Python, com conhecimento de outras linguagens como Java, Assembly e VBA) e desenvolvimento web (HTML5, CSS, JavaScript), bem como redes de computadores, ferramentas de diagnóstico de rede e suporte técnico para usuários de Linux, Windows e Mac.",
-    qual_4:
-      " Fluente em Inglês, tendo sido professor terceirizado em empresa multinacional durante 18 meses.",
+    firstp:
+      "Cursando Segurança Cibernética, com foco em segurança da informação e análise de vulnerabilidades em software e sistemas web, sou apaixonado por descobrir o funcionamento real de computadores e seus componentes, principalmente no que concerne à parte de segurança.",
+    secondp:
+      " Experiente em diversas áreas da tecnologia, incluindo programação (principalmente em C e Python, com conhecimento de outras linguagens como Java, Assembly e VBA) e desenvolvimento web (HTML5, CSS, JavaScript), bem como redes de computadores, ferramentas de diagnóstico de rede e suporte técnico para usuários de Linux, Windows e Mac. Fluente em Inglês, tendo sido professor terceirizado em empresa multinacional durante 18 meses.",
     tool_1_title: ">_ Dork Web",
-    tool_1_desc: "Ferramenta de linha de comando (CLI) em Python capaz de gerar, organizar e executar pesquisas avançadas no Google (Dorks)",
+    tool_1_desc:
+      "Ferramenta de linha de comando (CLI) em Python capaz de gerar, organizar e executar pesquisas avançadas no Google (Dorks)",
     tool_2_title: "Ferramenta 2",
     tool_2_desc: "Previsão de lançamento: segundo semestre de 2026.",
     tool_3_title: "Ferramenta 3",
@@ -50,14 +47,10 @@ const translation = {
   // Inglês
   en: {
     subtitle: "Free & Open Source tools for daily use",
-    qual_1:
-      " Studying Cybersecurity, focusing on information security and vulnerability analysis in software and web systems.",
-    qual_2:
-      " Passionate about discovering the real functioning of computers and their components, especially when it comes to security.",
-    qual_3:
-      "Experient in various areas of technology, including programming (mainly in C and Python, with knowledge of other languages ​​such as Java, Assembly and VBA) and web development (HTML5, CSS, JavaScript), as well as computer networks, network diagnostic tools and technical support for Linux, Windows and Mac users.",
-    qual_4:
-      " Fluent in English, having been an outsourced teacher in a multinational company for 18 months.",
+    firstp:
+      "Currently studying Cybersecurity with a focus on information security and vulnerability analysis in software and web systems, I am passionate about discovering the inner workings of computers and their components, particularly regarding security.",
+    secondp:
+      "Experienced in various areas of technology, including programming (primarily C and Python, with knowledge of other languages ​​such as Java, Assembly, and VBA) and web development (HTML5, CSS, JavaScript), as well as computer networking, network diagnostic tools, and technical support for Linux, Windows, and Mac users. Fluent in English, having worked as an outsourced instructor for a multinational company for 18 months.",
     tool_1_title: ">_ Dork Web",
     tool_1_desc:
       "Python command-line interface (CLI) tool capable of generating, organizing, and executing advanced Google searches (Dorks).",
