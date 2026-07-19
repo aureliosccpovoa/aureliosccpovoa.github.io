@@ -1,22 +1,19 @@
-// Seleção do interruptor (checkbox) do tema
-const themeSwitch = document.querySelector("#checkbox");
+// Seleção do botão do tema
+const themeSwitch = document.querySelector("#theme-switch-btn");
 
 // Mudar o tema
 function switchTheme(e) {
-  if (e.target.checked) {
-    document.body.classList.add("dark-mode");
-  } else {
-    document.body.classList.remove("dark-mode");
-  }
+    document.body.classList.toggle("light-mode");
 }
 
 // Chamar a função switchTheme quando o interruptor é acionado
-themeSwitch.addEventListener("change", switchTheme, false);
+themeSwitch.addEventListener("click", switchTheme);
 
 // Alteração do idioma
 const translation = {
   // Português
   "pt-br": {
+    switch_theme: "[ Mudar tema ]",
     subtitle: "Ferramentas gratuitas e de código aberto para uso cotidiano",
     firstp:
       "Cursando Segurança Cibernética, com foco em segurança da informação e análise de vulnerabilidades em software e sistemas web, sou apaixonado por descobrir o funcionamento real de computadores e seus componentes, principalmente no que concerne à parte de segurança.",
@@ -46,6 +43,7 @@ const translation = {
   },
   // Inglês
   en: {
+    switch_theme: "[ Switch theme ]",
     subtitle: "Free & Open Source tools for daily use",
     firstp:
       "Currently studying Cybersecurity with a focus on information security and vulnerability analysis in software and web systems, I am passionate about discovering the inner workings of computers and their components, particularly regarding security.",
@@ -77,15 +75,11 @@ const translation = {
 
 // Tradução da página
 const translatePage = (language) => {
-  document.querySelectorAll("[data-lang-key").forEach((element) => {
+  document.querySelectorAll("[data-lang-key]").forEach((element) => {
     const key = element.getAttribute("data-lang-key");
     if (translation[language] && translation[language][key]) {
-      // Se o elemento contiver um ícone, traduzir apenas o texto
-      if (element.children.length > 0 && element.children[0].tagName === "I") {
-        element.childNodes[1].nodeValue = translation[language][key];
-      } else {
+      // Injeção direta do texto, substituindo a antiga lógica de ícones
         element.innerText = translation[language][key];
-      }
     }
   });
   document.documentElement.lang = language;
